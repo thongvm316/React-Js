@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <div class="title">React Tutorials</div>
+    <img src="https://via.placeholder.com/150" alt=""> -->
+
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script type="text/javascript">
+        // {
+        //     type: 'div',
+        //     className: 'title',
+        //     children: 'React Tutorials'
+        // }
+        // {
+        //     type: 'img',
+        //     src: 'https://via.placeholder.com/150'
+        // }
+        // vi du tren dung de mo ta HTML DOM thanh OBJ ntn.
+        const Title = React.createElement('div', {
+            className: 'title'
+        }, 'React Tutorials');
+        const Image = React.createElement('img', {
+            src: 'https://via.placeholder.com/150'
+        });
+        const App = React.createElement('div', 'img', null, Title, Image);
+        const root = document.getElementById('root');
+        ReactDOM.render(App, root); // render App vao trong root
+    </script>
+</body>
+</html>
