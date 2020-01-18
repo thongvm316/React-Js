@@ -11,7 +11,7 @@ class App extends Component {
       " Di da bong", 
       " Bong chuyen", 
       " Bowling"
-    ];   
+    ];                  
   }   
   render() {
     return (
@@ -23,5 +23,14 @@ class App extends Component {
     );  
   }
 }
+////// cach viet truyen thong
+// function App() {
+//   return (
+//     <div className="App">
+//         <TodoItem /> 
+//         <TodoItem /> 
+//         <TodoItem /> 
+//     </div>
+//   );
 
 export default App;
