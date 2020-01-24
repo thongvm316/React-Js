@@ -7,7 +7,7 @@
   class App extends Component {
     constructor() {
       super();
-      this.todoItems = [
+      this.state.todoItems = [
         { title: 'Da bong', isComplete: true },
         { title: 'Cafe', isComplete: true },
         { title: 'Film' }
@@ -29,36 +29,19 @@
       //   );
       // }    
       //// cach 2 de render khi todoItem hava no data
+      onItemClicked() {
+        this.
+      }
       return (
         <div className="App">
           {this.todoItems.length > 0 && this.todoItems.map((item, index) => (
-            <TodoItem key={index} item={item}/>
+            <TodoItem key={index} item={item} onClick={this.onItemClicked}/>
           ))}
           {this.todoItems.length === 0 && 'Nothing Here'} 
         </div>
       );
     }
   }
-  ////// cach viet truyen thong
-  // function App() {
-  //   return (
-  //     <div className="App">
-  //         <TodoItem title="Da bong"/> 
-  //         <TodoItem title="Cafe"/> 
-  //         <TodoItem title="Film"/> 
-  //     </div>
-  //   );
-
-
-  // class App extends Component {
-  //   render() {
-  //     return(
-  //       <div className="App">
-  //         <TrafficLight/>
-          
-  //       </div>
-  //     );
-  //   }
-  // }
+ 
 
   export default App;
