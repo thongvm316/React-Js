@@ -17,24 +17,12 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        // {
-        //     type: 'div',
-        //     className: 'title',
-        //     children: 'React Tutorials'
-        // }
-        // {
-        //     type: 'img',
-        //     src: 'https://via.placeholder.com/150'
-        // }
-        // vi du tren dung de mo ta HTML DOM thanh OBJ ntn.
         // const Title = React.createElement('div', {
         //     className: 'title'
         // }, 'React Tutorials');
         // JSX
         const Title = <div class="title">React Tutorials</div>;
-        const Image = React.createElement('img', {
-            src: 'https://via.placeholder.com/150'
-        });
+        const Image = <img src="https://via.placeholder.com/150"></img>;
         const App = React.createElement('div', null, Title, Image);
         const root = document.getElementById('root');
         ReactDOM.render(App, root); // render App    vao trong root
