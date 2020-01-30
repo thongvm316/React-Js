@@ -12,26 +12,8 @@
         { title: 'Cafe', isComplete: true },
         { title: 'Film' }
       ];
-    }; // luu data vao constructor Fn
+    }
     render() {
-      // if (this.todoItems.length > 0) {
-      //   return (
-      //     <div className="App">
-      //       {
-      //         this.todoItems.map((item, index) => 
-      //         <TodoItem key={index} item={item}/>)
-      //       }
-      //     </div>
-      //   );  
-      // } else {
-      //   return (
-      //     <div className="App">Nothing Here</div>
-      //   );
-      // }    
-      //// cach 2 de render khi todoItem hava no data
-      onItemClicked() {
-        this.
-      }
       return (
         <div className="App">
           {this.todoItems.length > 0 && this.todoItems.map((item, index) => (
